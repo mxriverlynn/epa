@@ -1,7 +1,23 @@
 {
   "name": "epa",
   "version": "0.1.0",
+  "description": "simple environment configuration using json files",
   "private": false,
-  "main": "./index.js"
+  "keywords": "environment, config, configuration, production, development, staging, dev, json"
+  "main": "./index.js",
+  "homepage": "https://github.com/derickbailey/epa",
+  "bugs": { 
+    "url" : "http://github.com/derickbailey/epa/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Derick Bailey",
+    "url": "http://derickbailey.com",
+    "email": "derickbailey@gmail.com"
+  },
+  "repository" : { 
+    "type": "git", 
+    "url": "http://github.com/derickbailey/epa.git"
+  }
 }
 
