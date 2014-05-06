@@ -16,8 +16,8 @@ mkdir env
 mkdir env/development
 mkdir env/production
 
-touch env/development/index.json
-touch env/production/index.json
+touch env/development/config.json
+touch env/production/config.json
 ```
 
 **3) Require it**
@@ -29,7 +29,7 @@ touch env/production/index.json
 `NODE_ENV=production node myApp.js`
 
 The default is to assume "development" as the environment. If you specify anything other
-than "development", it will look for that folder / index.json.
+than "development", it will look for that folder / config.json.
 
 **5) Use it**
 
