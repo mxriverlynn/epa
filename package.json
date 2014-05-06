@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "simple environment configuration using json files",
   "private": false,
-  "keywords": "environment, config, configuration, production, development, staging, dev, json"
+  "keywords": "environment, config, configuration, production, development, staging, dev, json",
   "main": "./index.js",
   "homepage": "https://github.com/derickbailey/epa",
   "bugs": { 
