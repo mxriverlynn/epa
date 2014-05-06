@@ -1,6 +1,6 @@
 {
   "name": "epa",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "simple environment configuration using json files",
   "private": false,
   "keywords": "environment, config, configuration, production, development, staging, dev, json",
