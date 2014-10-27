@@ -1,0 +1,4 @@
+{
+  "test": "default dev env",
+  "sameSetting": "override from environment"
+}
