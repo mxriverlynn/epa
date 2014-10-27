@@ -1,15 +1,27 @@
 var path = require("path");
-
+var _ = require("underscore");
 var EPA = require("./lib/epa");
-var extend = require("./lib/extend");
 
-var configFolder = path.resolve(process.cwd(), "env");
+function buildEnv(){
+  var configFolder = path.resolve(process.cwd(), "env");
+  var environmentName = process.env.NODE_ENV || "development";
 
-var epa = new EPA({
-  folder: configFolder,
-  environment: process.env.NODE_ENV
-});
+  var epa = new EPA({
+    folder: configFolder,
+    environment: environmentName,
+    systemEnv: process.env
+  });
 
-var env = epa.buildEnv();
+  var env = epa.buildEnv();
+  return env;
+}
 
-module.exports = extend({EPA: EPA}, env);
+module.exports = {
+  EPA: EPA,
+  getEnvironment: function(){
+    if (!this._env){
+      this._env = buildEnv();
+    }
+    return this._env;
+  }
+};

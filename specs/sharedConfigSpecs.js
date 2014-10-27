@@ -14,7 +14,7 @@ describe("shared environment config", function(){
     });
 
     it("should load from 'shared' config for any environment", function(){
-      expect(env.shared).toBe(true);
+      expect(env.get("shared")).toBe(true);
     });
 
   });
@@ -31,10 +31,9 @@ describe("shared environment config", function(){
     });
 
     it("should use the env specific setting", function(){
-      expect(env.sameSetting).toBe("override from environment");
+      expect(env.get("sameSetting")).toBe("override from environment");
     });
 
   });
 
 });
-

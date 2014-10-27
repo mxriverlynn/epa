@@ -29,7 +29,8 @@
   },
   "dependencies": {
     "grunt-contrib-jshint": "^0.10.0",
-    "grunt-jasmine-node": "^0.2.1"
+    "grunt-jasmine-node": "^0.2.1",
+    "underscore": "^1.7.0"
   },
   "devDependencies": {}
 }

@@ -29,6 +29,11 @@ module.exports = function(grunt){
       specs: {
         files: "specs/**/*.js",
         tasks: ["specs"]
+      },
+
+      lib: {
+        files: "lib/**/*.js",
+        tasks: ["specs"]
       }
     }
   });

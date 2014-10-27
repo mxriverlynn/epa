@@ -14,7 +14,7 @@ describe("load environment config", function(){
     });
 
     it("should load from 'development' config", function(){
-      expect(env.test).toBe("default dev env");
+      expect(env.get("test")).toBe("default dev env");
     });
 
   });
@@ -32,7 +32,7 @@ describe("load environment config", function(){
     });
 
     it("should load from specified environment config", function(){
-      expect(env.test).toBe("not default");
+      expect(env.get("test")).toBe("not default");
     });
 
   });
