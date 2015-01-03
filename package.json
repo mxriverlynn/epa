@@ -1,6 +1,6 @@
 {
   "name": "epa",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "simple environment configuration using json files",
   "private": false,
   "keywords": [
@@ -28,9 +28,10 @@
     "url": "http://github.com/derickbailey/epa.git"
   },
   "dependencies": {
-    "grunt-contrib-jshint": "^0.10.0",
-    "grunt-jasmine-node": "^0.2.1",
     "underscore": "^1.7.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-jasmine-node": "^0.2.1"
+  }
 }
